@@ -56,7 +56,7 @@ const calculation = () => {
    let otherNotes = document.getElementById('other-notes').value;
    let otherNotesResponse =  document.getElementById('other-notes-response');
 
-    otherSkills.innerHTML = `The candidate demonstrated ${communicationGrade.toLowerCase()} communication skills.They were able to speak to their experience in regards to ${skills1}, ${skills2}, and ${skills3}.
+    otherSkills.innerHTML = `The candidate demonstrated ${communicationGrade.toLowerCase()} communication skills. They were able to speak to their experience in regards to ${skills1}, ${skills2}, and ${skills3}.
     In addition through their work experience, they also have experience with ${skills4} and ${skills5}. Overall, I would rate this candidate ${overallRating.toLowerCase()}.` 
 
     otherNotesResponse.innerHTML = `${otherNotes}`;
@@ -68,7 +68,7 @@ const calculation = () => {
    // let otherNotes = document.getElementById('other-notes').value;
    // let otherNotesResponse =  document.getElementById('other-notes-response');
 
-    otherSkills.innerHTML = `The candidate demonstrated ${communicationGrade.toLowerCase()} communication skills.They were able to speak to their experience in regards to ${skills1.toLowerCase()}, ${skills2.toLowerCase()}, and ${skills3.toLowerCase()}.
+    otherSkills.innerHTML = `The candidate demonstrated ${communicationGrade.toLowerCase()} communication skills. They were able to speak to their experience in regards to ${skills1.toLowerCase()}, ${skills2.toLowerCase()}, and ${skills3.toLowerCase()}.
     In addition through their work experience, they also have experience with ${skills4.toLowerCase()} and ${skills5.toLowerCase()}. Overall, I would rate this candidate ${overallRating.toLowerCase()}.` 
    
     //otherNotesResponse.innerHTML = `Other: ${otherNotes}`;
