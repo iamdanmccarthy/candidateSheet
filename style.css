@@ -1,0 +1,81 @@
+body {
+    margin: 30px;
+    border: 0;
+    color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    background-image: url(images/spacebg.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .heading {
+    margin: 50px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .box {
+    text-align: left;
+    margin: 15px;
+    padding: 0 200px;
+    justify-content: center;
+  }
+#left-box {
+   width: 50%;
+   
+}
+  #right-box {
+    width: 50%;
+  
+
+  }
+
+  #other-notes-heading {
+    vertical-align: top;
+  }
+
+  span.inquiry {
+    display: inline-flex;
+    margin: 15px;
+    width: 120px;
+    
+
+  }
+
+  div.inquiry {
+    display: flex;
+    margin: 15px;
+  }
+
+  #input {
+    height: 200px;
+  }
+
+  .button {
+    margin: 100px 15px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+  }
+
+  .button:hover {
+    background-color: #ffffff; 
+    color: #4CAF50;
+  }
+
+  .skills-input {
+    margin: 15px;
+  }

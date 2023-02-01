@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="heading"><h1>Candidate Phone Screen</h1></div>
+
+    <div class="container">
+        <div class="box" id="left-box">
+            <div class="title"><h2>Candidate Info</h2></div>
+            
+            <div><span class="inquiry">Name: </span><span class="input"><input id="name"></span></div>
+            <div><span class="inquiry">Date: </span><span class="input"><input  id="date" type="date"></span></div>
+            <div><span class="inquiry" >Location: </span><span class="input"><input id="location"></span></div>
+            <div><span class="inquiry" >Source: </span><span class="input"><input id="source"></span></div>
+            <div><span class="inquiry" >Mobility: </span><span class="input"><input id="mobility"></span></div>
+            <div><span class="inquiry" >Timeline: </span><span class="input"><input id="timeline"></span></div>
+            <div><span class="inquiry" >Vaccination: </span><span class="input"><input id="vaccination"></span></div>
+            <div><span class="inquiry" >Compensation: </span><span class="input"><input id="compensation"></span></div>
+            <hr>
+            
+            <div><span class="inquiry" >Skill One: </span><span class="input"><input id="skills1"></span></div>
+            <div><span class="inquiry" >Skill Two: </span><span class="input"><input id="skills2"></span></div>
+            <div><span class="inquiry" >Skill Three: </span><span class="input"><input id="skills3"></span></div>
+            <div><span class="inquiry" >Skill Four: </span><span class="input"><input id="skills4"></span></div>
+            <div><span class="inquiry" >Skill Five: </span><span class="input"><input id="skills5"></span></div>
+
+            <div><span class="inquiry" id="other-notes-heading">Other notes: </span><textarea id="other-notes" name="other-notes" rows="5" cols="40">
+                
+                </textarea></div>
+            <div><span class="inquiry" >Communication: </span>
+                <select id="communication-skills">
+                    <option>Excellent</option>
+                    <option>Great</option>
+                    <option>Good</option>
+                    <option>Decent</option>
+                    <option>Poor</option>
+                </select>
+            </div>
+            <div><span class="inquiry">Rating: </span>
+                <select id="overall">
+                    <option>Four Stars (Strong hire)</option>
+                    <option>Three Stars (Hire)</option>
+                    <option>Two Stars (No hire)</option>
+                    <option>One Star (Strong no hire)</option>
+                   
+                </select>
+            </div>
+            <button class="button" id="end-button" onClick="calculation()">Interview complete</button>
+        </div>
+
+        <div class="box" id="right-box">
+            <div class="title"><h2>Candidate Info</h2></div>
+            <div class="inquiry" id="name-response">Candidate Name</div>
+            <div class="inquiry" id="date-response">Date</div>
+            <div class="inquiry" id="location-response">Location</div>
+            <div class="inquiry" id="source-response">Source</div>
+            <div class="inquiry" id="mobility-response">Mobility</div>
+            <div class="inquiry" id="timeline-response">Timeline</div>
+            <div class="inquiry" id="vaccination-response">Vaccination</div>
+            <div class="inquiry" id="compensation-response">Compensation</div>
+            <div class="inquiry" id="general-response">Summary</div>
+            <div class="inquiry" id="other-notes-response"></div>
+            
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!--<div class="inquiry" id="date"></div><div id="input"></div>Date <input type="date"></div>
+            <div class="inquiry" id="location">Location <input></div>
+            <div class="inquiry" id="source">Source <input></div>
+            <div class="inquiry" id="mobility">Mobility <input></div>
+            <div class="inquiry" id="timeline">Timeline <input></div>
+            <div class="inquiry" id="vax">Vaccinated: Yes<input type="checkbox">No<input type="checkbox"></div>
+            <div class="inquiry" id="compensation">Compensation <input></div>-->
