@@ -79,3 +79,22 @@ body {
   .skills-input {
     margin: 15px;
   }
+
+  .cancel-button {
+    margin: 100px 15px;
+    background-color: #f20b0b; /* red */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+  }
+
+  .cancel-button:hover {
+    background-color: #ffffff; 
+    color: #4CAF50;
+  }
