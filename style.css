@@ -4,7 +4,7 @@ body {
     color: #ffffff;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
-    background-image: url(images/spacebg.jpeg);
+    background-image: url(images/fo-bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -17,17 +17,19 @@ body {
   .container {
     display: flex;
     justify-content: center;
-    
+    text-align: center;
+    border: 1px solid white;
   }
 
   .box {
     text-align: left;
     margin: 15px;
     padding: 0 200px;
-    justify-content: center;
+    justify-content: left;
+    border: 1px solid white;
   }
 #left-box {
-   width: 50%;
+   width: 30%;
    
 }
   #right-box {
@@ -55,6 +57,7 @@ body {
 
   #input {
     height: 200px;
+    display: inline-block;
   }
 
   .button {

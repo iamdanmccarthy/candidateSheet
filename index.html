@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-    <title>Candidate Phone Screen</title>
+    <title>Candidate Interview Feedback</title>
 </head>
 <body>
-    <div class="heading"><h1>Candidate Phone Screen</h1></div>
+    <div class="heading"><h1>Candidate Interview Feedback</h1></div>
 
     <div class="container">
         <div class="box" id="left-box">
@@ -17,47 +17,10 @@
             
             <div><span class="inquiry">Name: </span><span class="input"><input id="name"></span></div>
             <div><span class="inquiry">Date: </span><span class="input"><input id="date" type="date"></span></div>
-            <div><span class="inquiry">Location: </span><span class="input"><input id="location"></span></div>
-            <div><span class="inquiry" >Source: </span>
-                <select id="source">
-                    <option>Applied</option>
-                    <option>Sourced by me</option>
-                    <option>Sourced by Calix</option>
-                    <option>Referred</option>
-                    <option>Other</option>
-                </select>
-            </div>
-            <div><span class="inquiry" >Mobility: </span>
-                <select id="mobility">
-                    <option>Citizen/permanent resident</option>
-                    <option>H1B Visa</option>
-                    <option>F1 / Student Visa</option>
-                    <option>TN Visa</option>
-                    <option>Other</option>
-                </select>
-            </div>
-            <div><span class="inquiry">Timeline: </span><span class="input"><input id="timeline"></span></div>
-            <div><span class="inquiry" >Vaccination: </span>
-                <select id="vaccination">
-                    <option>Fully vaccinated</option>
-                    <option>No but willing to get vaxxed</option>
-                    <option>No - religious exception</option>
-                    <option>No - medical exception</option>
-                    <option>No - Other</option>
-                </select>
-            </div>
-            <div><span class="inquiry">Compensation: </span><span class="input"><input id="compensation"></span></div>
-            <hr>
             
-            <div><span class="inquiry" >Skill One: </span><span class="input"><input id="skills1"></span></div>
-            <div><span class="inquiry" >Skill Two: </span><span class="input"><input id="skills2"></span></div>
-            <div><span class="inquiry" >Skill Three: </span><span class="input"><input id="skills3"></span></div>
-            <div><span class="inquiry" >Skill Four: </span><span class="input"><input id="skills4"></span></div>
-            <div><span class="inquiry" >Skill Five: </span><span class="input"><input id="skills5"></span></div>
-
-            <div><span class="inquiry" id="other-notes-heading">Other notes: </span><textarea id="other-notes" name="other-notes" rows="5" cols="40">
-                
-                </textarea></div>
+            
+            
+            
             <div><span class="inquiry" >Communication: </span>
                 <select id="communication-skills">
                     <option>Excellent</option>
@@ -67,6 +30,45 @@
                     <option>Poor</option>
                 </select>
             </div>
+            
+            <div><span class="inquiry" >Skill One: </span><span class="input"><input class="skills-input" id="skills1"><select id="skills1-score">
+                <option>Outstanding</option>
+                <option>Great</option>
+                <option>Average</option>
+                <option>Needs Work</option>
+                <option>Awful</option>
+            </select></span></div>
+            <div><span class="inquiry" >Skill Two: </span><span class="input"><input class="skills-input" id="skills2"><select id="skills2-score">
+                <option>Outstanding</option>
+                <option>Great</option>
+                <option>Average</option>
+                <option>Needs Work</option>
+                <option>Awful</option>
+            </select></span></div>
+            <div><span class="inquiry" >Skill Three: </span><span class="input"><input class="skills-input" id="skills3"><select id="skills3-score">
+                <option>Outstanding</option>
+                <option>Great</option>
+                <option>Average</option>
+                <option>Needs Work</option>
+                <option>Awful</option>
+            </select></span></div>
+            <div><span class="inquiry" >Skill Four: </span><span class="input"><input class="skills-input" id="skills4"><select id="skills4-score">
+                <option>Outstanding</option>
+                <option>Great</option>
+                <option>Average</option>
+                <option>Needs Work</option>
+                <option>Awful</option>
+            </select></span></div>
+            <div><span class="inquiry" >Skill Five: </span><span class="input"><input class="skills-input" id="skills5"><select id="skills5-score">
+                <option>Outstanding</option>
+                <option>Great</option>
+                <option>Average</option>
+                <option>Needs Work</option>
+                <option>Awful</option>
+            </select></span></div>
+
+            <div><span class="inquiry" id="other-notes-heading">Other notes: </span><textarea id="other-notes" name="other-notes" rows="5" cols="40"></textarea></div>
+            
             <div><span class="inquiry">Rating: </span>
                 <select id="overall">
                     <option>Four Stars (Strong hire)</option>
@@ -84,14 +86,16 @@
             <div class="title"><h2>Interview Feedback</h2></div>
             <div class="inquiry" id="name-response"></div>
             <div class="inquiry" id="date-response"></div>
-            <div class="inquiry" id="location-response"></div>
-            <div class="inquiry" id="source-response"></div>
-            <div class="inquiry" id="mobility-response"></div>
-            <div class="inquiry" id="timeline-response"></div>
-            <div class="inquiry" id="vaccination-response"></div>
-            <div class="inquiry" id="compensation-response"></div>
+            <div class="inquiry" id="overall-rating"></div>
+            <div class="inquiry" id="communication-rating"></div>
+            <div class="inquiry" id="skills-rating1"></div>
+            <div class="inquiry" id="skills-rating2"></div>
+            <div class="inquiry" id="skills-rating3"></div>
+            <div class="inquiry" id="skills-rating4"></div>
+            <div class="inquiry" id="skills-rating5"></div>
             <div class="inquiry" id="general-response"></div>
             <div class="inquiry" id="other-notes-response"></div>
+            <button class="button" id="copy-button" onClick="copyThisText()" style="display:none">Copy Text</button>
             
         </div>
 
@@ -120,4 +124,16 @@
             <div class="inquiry" id="mobility">Mobility <input></div>
             <div class="inquiry" id="timeline">Timeline <input></div>
             <div class="inquiry" id="vax">Vaccinated: Yes<input type="checkbox">No<input type="checkbox"></div>
-            <div class="inquiry" id="compensation">Compensation <input></div>-->
+            <div class="inquiry" id="compensation">Compensation <input></div>
+
+            body {
+                margin: 30px;
+                border: 0;
+                color: #ffffff;
+                font-family: 'Roboto Mono', monospace;
+                text-align: center;
+                background-image: url(images/spacebg.jpeg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+              }-->

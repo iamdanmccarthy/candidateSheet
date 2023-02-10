@@ -12,64 +12,77 @@ const calculation = () => {
     let completedDate = document.getElementById('date-response')
     completedDate.innerHTML = `Date: ${date}`;
   
-    //location
-    let location = document.getElementById('location').value;
-    let completedLocation = document.getElementById('location-response')
-    completedLocation.innerHTML = `Location: ${location}`;
+    let overallRating = document.getElementById('overall').value;
+    let myRating = document.getElementById('overall-rating')
+    myRating.innerHTML = `My Rating: ${overallRating} </strong>.`
 
-    //source
-    let source = document.getElementById('source').value;
-    let completedSource = document.getElementById('source-response')
-    completedSource.innerHTML = `Source: ${source}`;
-
-    //mobility
-    let mobility = document.getElementById('mobility').value;
-    let completedMobiloity = document.getElementById('mobility-response')
-    completedMobiloity.innerHTML = `Mobility: ${mobility}`;
-
-    //timeline
-    let timeline = document.getElementById('timeline').value;
-    let completedTimeline = document.getElementById('timeline-response')
-    completedTimeline.innerHTML = `Timeline: ${timeline}`;
-
-    //vaccination
-    let vaccination = document.getElementById('vaccination').value;
-    let completedVaccination = document.getElementById('vaccination-response')
-    completedVaccination.innerHTML = `Vaccinated: ${vaccination}`;
-
-    //compensation
-    let compensation = document.getElementById('compensation').value;
-    let completedCompensation = document.getElementById('compensation-response')
-    completedCompensation.innerHTML = `Compensation Expectations: ${compensation}`;
+    
 
     //other skills
+    let communicationRatingParagraph = document.getElementById('communication-rating');
+    let communicationGrade = document.getElementById('communication-skills').value;
+    communicationRatingParagraph.innerHTML = `Communication: ${communicationGrade}`;
+
     let skills1 = document.getElementById('skills1').value;
+    let skills1Rating = document.getElementById('skills1-score').value;
+    let skills1Paragraph = document.getElementById('skills-rating1');
+    skills1Paragraph.innerHTML = `${skills1}: ${skills1Rating}`
+
+    let skills2 = document.getElementById('skills2').value;
+    let skills2Rating = document.getElementById('skills2-score').value;
+    let skills2Paragraph = document.getElementById('skills-rating2');
+    skills2Paragraph.innerHTML = `${skills2}: ${skills2Rating}`
+
+    let skills3 = document.getElementById('skills3').value;
+    let skills3Rating = document.getElementById('skills3-score').value;
+    let skills3Paragraph = document.getElementById('skills-rating3');
+    skills3Paragraph.innerHTML = `${skills3}: ${skills3Rating}`
+
+    let skills4 = document.getElementById('skills4').value;
+    let skills4Rating = document.getElementById('skills4-score').value;
+    let skills4Paragraph = document.getElementById('skills-rating4');
+    skills4Paragraph.innerHTML = `${skills4}: ${skills4Rating}`
+
+    let skills5 = document.getElementById('skills5').value;
+    let skills5Rating = document.getElementById('skills5-score').value;
+    let skills5Paragraph = document.getElementById('skills-rating5');
+    skills5Paragraph.innerHTML = `${skills5}: ${skills5Rating}`
+
+    
+
+
+
+
+    /*
     let skills2 = document.getElementById('skills2').value;
     let skills3 = document.getElementById('skills3').value;
     let skills4 = document.getElementById('skills4').value;
     let skills5 = document.getElementById('skills5').value;
 
+    
+    let skills2Rating = document.getElementById('skills2-score').value;
+    let skills3Rating = document.getElementById('skills3-score').value;
+    let skills4Rating = document.getElementById('skills4-score').value;
+    let skills5Rating = document.getElementById('skills5-score').value;
+*/
+
+
+
     let otherSkills = document.getElementById('general-response');
-    let communicationGrade = document.getElementById('communication-skills').value;
-    let overallRating = document.getElementById('overall').value;
+   
+   
 
    let otherNotes = document.getElementById('other-notes').value;
    let otherNotesResponse =  document.getElementById('other-notes-response');
 
-    otherSkills.innerHTML = `The candidate demonstrated ${communicationGrade.toLowerCase()} communication skills. They were able to speak to their experience in regards to ${skills1}, ${skills2}, and ${skills3}.
-    In addition through their work experience, they also have experience with ${skills4} and ${skills5}. Overall, I would rate this candidate ${overallRating.toLowerCase()}.` 
+    /*otherSkills.innerHTML = `The candidate demonstrated ${communicationGrade.toLowerCase()} communication skills. They were able to speak to their experience in regards to ${skills1}, ${skills2}, and ${skills3}.
+    In addition through their work experience, they also have experience with ${skills4} and ${skills5}.` */
 
     otherNotesResponse.innerHTML = `${otherNotes}`;
+
+    //const copyButton = document.getElementById('copy-button');
+
+    //copyButton.style.display = "flex";
     
 }
 
-/*
- //other notes that I took:
-   // let otherNotes = document.getElementById('other-notes').value;
-   // let otherNotesResponse =  document.getElementById('other-notes-response');
-
-    otherSkills.innerHTML = `The candidate demonstrated ${communicationGrade.toLowerCase()} communication skills. They were able to speak to their experience in regards to ${skills1.toLowerCase()}, ${skills2.toLowerCase()}, and ${skills3.toLowerCase()}.
-    In addition through their work experience, they also have experience with ${skills4.toLowerCase()} and ${skills5.toLowerCase()}. Overall, I would rate this candidate ${overallRating.toLowerCase()}.` 
-   
-    //otherNotesResponse.innerHTML = `Other: ${otherNotes}`;
-*/
