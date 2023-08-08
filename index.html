@@ -19,8 +19,8 @@
             <div><span class="inquiry">Date: </span><span class="input"><input id="date" type="date"></span></div>
             
             
-            
-            
+           <hr>
+            <!---
             <div><span class="inquiry" >Communication: </span>
                 <select id="communication-skills">
                     <option>Excellent</option>
@@ -30,36 +30,53 @@
                     <option>Poor</option>
                 </select>
             </div>
+
+            -->
             
-            <div><span class="inquiry" >Skill One: </span><span class="input"><input class="skills-input" id="skills1"><select id="skills1-score">
-                <option>Outstanding</option>
-                <option>Great</option>
-                <option>Average</option>
-                <option>Needs Work</option>
-                <option>Awful</option>
-            </select></span></div>
-            <div><span class="inquiry" >Skill Two: </span><span class="input"><input class="skills-input" id="skills2"><select id="skills2-score">
-                <option>Outstanding</option>
-                <option>Great</option>
-                <option>Average</option>
-                <option>Needs Work</option>
-                <option>Awful</option>
-            </select></span></div>
-            <div><span class="inquiry" >Skill Three: </span><span class="input"><input class="skills-input" id="skills3"><select id="skills3-score">
-                <option>Outstanding</option>
-                <option>Great</option>
-                <option>Average</option>
-                <option>Needs Work</option>
-                <option>Awful</option>
-            </select></span></div>
-            <div><span class="inquiry" >Skill Four: </span><span class="input"><input class="skills-input" id="skills4"><select id="skills4-score">
-                <option>Outstanding</option>
-                <option>Great</option>
-                <option>Average</option>
-                <option>Needs Work</option>
-                <option>Awful</option>
-            </select></span></div>
-            <div><span class="inquiry" >Skill Five: </span><span class="input"><input class="skills-input" id="skills5"><select id="skills5-score">
+            <div><span class="inquiry" >Design and Scalability</span>
+                <select id="skills1-score">
+                    <option>☆</option>
+                    <option>☆☆</option>
+                    <option>☆☆☆</option>
+                    <option>☆☆☆☆</option>
+                </select></span></div>
+                <span class="input">
+                    <textarea name="other-notes" rows="3" cols="50" class="skills-input" id="skills1"></textarea></span>
+
+
+                    <div><span class="inquiry" >Coding and Testability</span>
+                        <select id="skills2-score">
+                            <option>☆</option>
+                            <option>☆☆</option>
+                            <option>☆☆☆</option>
+                            <option>☆☆☆☆</option>
+                        </select></span></div>
+                        <span class="input">
+                            <textarea name="other-notes" rows="3" cols="50" class="skills-input" id="skills2"></textarea></span>
+
+                            <div><span class="inquiry">Communication and Thought Process</span>
+                                <select id="skills3-score">
+                                    <option>☆</option>
+                                    <option>☆☆</option>
+                                    <option>☆☆☆</option>
+                                    <option>☆☆☆☆</option>
+                                </select></span></div>
+                                <span class="input">
+                                    <textarea name="other-notes" rows="3" cols="50" class="skills-input" id="skills3"></textarea></span>
+
+                                    <div><span class="inquiry">Technology Familiarity and Choice</span>
+                                        <select id="skills4-score">
+                                            <option>☆</option>
+                                            <option>☆☆</option>
+                                            <option>☆☆☆</option>
+                                            <option>☆☆☆☆</option>
+                                        </select></span></div>
+                                        <span class="input">
+                                            <textarea name="other-notes" rows="3" cols="50" class="skills-input" id="skills4"></textarea></span>
+                
+
+                                <!---     
+            <div><span class="inquiry" >Coding and Testability</span><span class="input"><input class="skills-input" id="skills2"><select id="skills2-score">
                 <option>Outstanding</option>
                 <option>Great</option>
                 <option>Average</option>
@@ -67,17 +84,38 @@
                 <option>Awful</option>
             </select></span></div>
 
+            <div><span class="inquiry" >Communication and Thought Process</span><span class="input"><input class="skills-input" id="skills3"><select id="skills3-score">
+                <option>Outstanding</option>
+                <option>Great</option>
+                <option>Average</option>
+                <option>Needs Work</option>
+                <option>Awful</option>
+            </select></span></div>
+            <div><span class="inquiry" >Technology Familiarity and Choice</span><span class="input"><input class="skills-input" id="skills4"><select id="skills4-score">
+                <option>Outstanding</option>
+                <option>Great</option>
+                <option>Average</option>
+                <option>Needs Work</option>
+                <option>Awful</option>
+            </select></span></div>
+
+            
+
             <div><span class="inquiry" id="other-notes-heading">Other notes: </span><textarea id="other-notes" name="other-notes" rows="5" cols="40"></textarea></div>
+
+            -->      
+          
             
             <div><span class="inquiry">Rating: </span>
                 <select id="overall">
-                    <option>Four Stars (Strong hire)</option>
-                    <option>Three Stars (Hire)</option>
-                    <option>Two Stars (No hire)</option>
+
                     <option>One Star (Strong no hire)</option>
-                   
+                    <option>Two Stars (No hire)</option>
+                    <option>Three Stars (Hire)</option>
+                    <option>Four Stars (Strong hire)</option>                   
                 </select>
             </div>
+            
             <button class="button" id="end-button" onClick="calculation()">Interview complete</button>
             <button type="button" class="cancel-button" onClick="window.location.reload()">Reload Page</button>
         </div>
@@ -92,7 +130,6 @@
             <div class="inquiry" id="skills-rating2"></div>
             <div class="inquiry" id="skills-rating3"></div>
             <div class="inquiry" id="skills-rating4"></div>
-            <div class="inquiry" id="skills-rating5"></div>
             <div class="inquiry" id="general-response"></div>
             <div class="inquiry" id="other-notes-response"></div>
             <button class="button" id="copy-button" onClick="copyThisText()" style="display:none">Copy Text</button>

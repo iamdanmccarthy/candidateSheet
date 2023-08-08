@@ -12,45 +12,40 @@ const calculation = () => {
     let completedDate = document.getElementById('date-response')
     completedDate.innerHTML = `Date: ${date}`;
   
+    //overall
     let overallRating = document.getElementById('overall').value;
     let myRating = document.getElementById('overall-rating')
-    myRating.innerHTML = `My Rating: ${overallRating} </strong>.`
+    myRating.innerHTML = `My Rating: ${overallRating} </strong>`
 
     
 
     //other skills
+    /*
     let communicationRatingParagraph = document.getElementById('communication-rating');
     let communicationGrade = document.getElementById('communication-skills').value;
     communicationRatingParagraph.innerHTML = `Communication: ${communicationGrade}`;
 
+    */
+
     let skills1 = document.getElementById('skills1').value;
-    let skills1Rating = document.getElementById('skills1-score').value;
+    let skills1Rating = document.getElementById('skills1-score').value; 
     let skills1Paragraph = document.getElementById('skills-rating1');
-    skills1Paragraph.innerHTML = `${skills1}: ${skills1Rating}`
+    skills1Paragraph.innerHTML = `Design and Scalability: ${skills1Rating} ${skills1}`
 
     let skills2 = document.getElementById('skills2').value;
     let skills2Rating = document.getElementById('skills2-score').value;
     let skills2Paragraph = document.getElementById('skills-rating2');
-    skills2Paragraph.innerHTML = `${skills2}: ${skills2Rating}`
+    skills2Paragraph.innerHTML = `Coding and Testability: ${skills2Rating} ${skills2}`
 
     let skills3 = document.getElementById('skills3').value;
-    let skills3Rating = document.getElementById('skills3-score').value;
+    let skills3Rating = document.getElementById('skills3-score').value; 
     let skills3Paragraph = document.getElementById('skills-rating3');
-    skills3Paragraph.innerHTML = `${skills3}: ${skills3Rating}`
+    skills3Paragraph.innerHTML = `Communication and Thought Process: ${skills3Rating} ${skills3}`
 
     let skills4 = document.getElementById('skills4').value;
     let skills4Rating = document.getElementById('skills4-score').value;
     let skills4Paragraph = document.getElementById('skills-rating4');
-    skills4Paragraph.innerHTML = `${skills4}: ${skills4Rating}`
-
-    let skills5 = document.getElementById('skills5').value;
-    let skills5Rating = document.getElementById('skills5-score').value;
-    let skills5Paragraph = document.getElementById('skills-rating5');
-    skills5Paragraph.innerHTML = `${skills5}: ${skills5Rating}`
-
-    
-
-
+    skills4Paragraph.innerHTML = `Technology Familiarity and Choice: ${skills4Rating} ${skills4}`
 
 
     /*

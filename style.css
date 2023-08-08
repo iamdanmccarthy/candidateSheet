@@ -45,7 +45,7 @@ body {
   span.inquiry {
     display: inline-flex;
     margin: 15px;
-    width: 120px;
+    width: 200px;
     
 
   }
@@ -61,7 +61,7 @@ body {
   }
 
   .button {
-    margin: 100px 15px;
+    margin: 10px 15px;
     background-color: #4CAF50; /* Green */
     border: none;
     border-radius: 5px;
@@ -84,7 +84,7 @@ body {
   }
 
   .cancel-button {
-    margin: 100px 15px;
+    margin: auto;
     background-color: #f20b0b; /* red */
     border: none;
     border-radius: 5px;
@@ -95,6 +95,7 @@ body {
     display: inline-block;
     font-size: 16px;
     transition-duration: 0.4s;
+    justify-content: center;
   }
 
   .cancel-button:hover {
